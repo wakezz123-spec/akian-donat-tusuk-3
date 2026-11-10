@@ -11,6 +11,6 @@ nav.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
 document.getElementById("year").textContent = new Date().getFullYear();
 
 // GANTI nomor di bawah dengan nomor WhatsApp bisnis (format internasional tanpa + atau spasi).
-const whatsappNumber = "6281234567890";
+const whatsappNumber = "6285135751969";
 document.getElementById("order-link").href =
   `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Halo Donat Tusuk Akian, saya mau tanya menu dan pemesanan.")}`;
