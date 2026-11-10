@@ -57,7 +57,44 @@
     </section>
 
     <section class="order-banner section-wrap" id="kontak"><div><span class="eyebrow">SUDAH SIAP NGEMIL?</span><h2>Yuk, pesan donat<br>favoritmu hari ini!</h2><p>Hubungi kami untuk tanya varian, harga, dan cara pemesanan.</p></div><a class="button dark" id="order-link" href="https://wa.me/6281234567890" target="_blank" rel="noreferrer">Pesan via WhatsApp <span>↗</span></a></section>
-  </main>
+  <section class="order-form-section section-wrap" id="form-pesan">
+  <div class="section-heading">
+    <span class="eyebrow">PEMESANAN ONLINE</span>
+    <h2>Pesan donat <em>di sini!</em></h2>
+    <p>Isi data pesanan kamu di bawah ini.</p>
+  </div>
+
+  <form id="order-form">
+    <label>Nama kamu</label>
+    <input type="text" id="customer_name" required
+      placeholder="Masukkan nama">
+
+    <label>Nomor WhatsApp</label>
+    <input type="tel" id="phone" required
+      placeholder="Contoh: 085123456789">
+
+    <label>Pilih rasa donat</label>
+    <select id="product" required>
+      <option value="">Pilih rasa</option>
+      <option value="Cokelat Crunch">Cokelat Crunch</option>
+      <option value="Cheese Melt">Cheese Melt</option>
+      <option value="Strawberry Pop">Strawberry Pop</option>
+    </select>
+
+    <label>Jumlah pesanan</label>
+    <input type="number" id="quantity" min="1"
+      max="100" required placeholder="Jumlah donat">
+
+    <label>Catatan tambahan</label>
+    <textarea id="notes" placeholder="Catatan (opsional)"></textarea>
+
+    <button type="submit" class="button primary">
+      Kirim Pesanan
+    </button>
+
+    <p id="order-message"></p>
+  </form>
+</section></main>
 
   <footer><a class="brand" href="#beranda"><span class="brand-mark">🍩</span><span>DONAT TUSUK <b>AKIAN</b></span></a><p>Manisnya bikin balik lagi. © <span id="year"></span> Donat Tusuk Akian.</p><a href="#beranda" class="back-top">Kembali ke atas ↑</a></footer>
   <script src="script.js"></script>
